@@ -1,0 +1,61 @@
+@login
+Feature: As user I want to be able to login under different roles
+# this is a comment
+#Background - test pre-condition
+#  will be executed before every scenario in the particular feature file
+
+  Background: common steps
+    Given user is on the login page
+
+  @with_two_columns
+  Scenario Outline: Parametrized login as <role>
+    When user logs in as a "<role>"
+    Then user should see "<page_title>" page
+
+    Examples:
+      | role          | page_title      |
+      | sales manager | Dashboard       |
+      | store manager | Dashboard       |
+      | driver        | Quick Launchpad |
+  #@SalesManager
+  #Scenario: Login as a sales manager
+    #When user logs in as a "sales manager"
+   ## Then user should see dashboard page
+
+  #@StoreManager
+  #Scenario: Login as a store manager
+   # When user logs in as a "store manager"
+    #Then user should see dashboard page
+#"driver" - is a parameter. "" allows to do test parametrization which helps to re-use test steps
+
+ # @driver
+  #Scenario: Login as a driver
+   # When user logs in as a "driver"
+    #Then user should see Quick Launchpad page
+
+
+
+
+  @negative_login
+  Scenario: Invalid password
+   When user logs in with "storemanager85" username and "wrong" password
+    Then user verifies that "Invalid user name or password." message is displayed
+
+
+  @negative_scenario_outline
+  Scenario Outline: Invalid login with <username> and <password>
+    When user logs in with "<username>" username and "<password>" password
+    Then user verifies that "<message>" message is displayed
+
+    Examples: data set
+      | username | password | message                        |
+      | wrong    | bad      | Invalid user name or password. |
+      | wrong213 | bad      | Invalid user name or password. |
+      | wrong32  | bad      | Invalid user name or password. |
+      | wrong12  | bad      | Invalid user name or password. |
+
+  #or	--> “It will find any matching tad and run all of the given tags
+    #and -->	“It will run only if the scenario or feature file has all of the given tags
+    #Whenever we use “and” keyword we are being more specific
+    #It expects all of the tags to be in that scenario to run it
+    #not	--> “Is used to exclude any group of tags

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.vytrack.runners.CucumberRunner
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 414.434 s <<< FAILURE! - in com.vytrack.runners.CucumberRunner
+As user I want to be able to login under different roles.Parametrized login as driver #1  Time elapsed: 10.226 s  <<< FAILURE!
+org.junit.ComparisonFailure: Title is not correct! expected:<[Dashboar]d> but was:<[Quick Launchpa]d>
+
