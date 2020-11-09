@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
 //
         plugin = {
               //  "pretty",
-                "json:target/cucumber.json"
+                "json:target/cucumber.json",
                // ,"junit:target/JunitReports/report.xml",
-                 //"html:target/cucumber-report.html",
+                 "html:target/cucumber-report.html"
                 ,"rerun:target/rerun.txt"
         },
 
