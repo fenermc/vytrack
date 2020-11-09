@@ -1,0 +1,124 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1872000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-09T04:42:36.968Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7218000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Invalid password",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 645000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 966000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user logs in with \"storemanager85\" username and \"wrong\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"storemanager85\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"wrong\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5041000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@negative_login"
+          }
+        ]
+      }
+    ],
+    "name": "As user I want to be able to login under different roles",
+    "description": "",
+    "id": "as-user-i-want-to-be-able-to-login-under-different-roles",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
