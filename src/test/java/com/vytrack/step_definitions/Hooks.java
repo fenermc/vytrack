@@ -29,6 +29,7 @@ public class Hooks {
         System.out.println("::: Starting Automation:::");
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
     }
 
 

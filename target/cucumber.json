@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1872000000,
+              "duration": 1072000000,
               "status": "passed"
             },
             "line": 8,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-09T04:42:36.968Z",
+        "start_timestamp": "2020-11-09T19:30:38.747Z",
         "before": [
           {
             "result": {
-              "duration": 7218000000,
+              "duration": 7428000000,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "after": [
           {
             "result": {
-              "duration": 645000000,
+              "duration": 851000000,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 966000000,
+              "duration": 1222000000,
               "status": "passed"
             },
             "line": 41,
@@ -78,15 +78,16 @@
           },
           {
             "result": {
-              "duration": 5041000000,
-              "status": "passed"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cInvalid [] name or password.\u003e but was:\u003cInvalid [user] name or password.\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(LoginStepDefinitions.java:61)\r\n\tat ✽.user verifies that \"Invalid  name or password.\" message is displayed(file:///C:/IdeaProjects/Vytrack/src/test/resources/features/Login.feature:42)\r\n",
+              "duration": 5050000000,
+              "status": "failed"
             },
             "line": 42,
-            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "name": "user verifies that \"Invalid  name or password.\" message is displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Invalid user name or password.\"",
+                  "val": "\"Invalid  name or password.\"",
                   "offset": 19
                 }
               ],

@@ -39,7 +39,7 @@ Feature: As user I want to be able to login under different roles
   @negative_login
   Scenario: Invalid password
    When user logs in with "storemanager85" username and "wrong" password
-    Then user verifies that "Invalid user name or password." message is displayed
+    Then user verifies that "Invalid  name or password." message is displayed
 
 
   @negative_scenario_outline

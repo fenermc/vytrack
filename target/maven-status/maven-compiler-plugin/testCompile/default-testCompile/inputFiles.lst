@@ -9,6 +9,7 @@ C:\IdeaProjects\Vytrack\src\test\java\com\vytrack\pages\CreateCalendarEventPage.
 C:\IdeaProjects\Vytrack\src\test\java\com\vytrack\step_definitions\CreateCalendarEventStepDefinitions.java
 C:\IdeaProjects\Vytrack\src\test\java\com\vytrack\pages\BasePage.java
 C:\IdeaProjects\Vytrack\src\test\java\com\vytrack\runners\CucumberRunner.java
+C:\IdeaProjects\Vytrack\src\test\java\com\vytrack\ui\getProperties\getBrowserType.java
 C:\IdeaProjects\Vytrack\src\test\java\com\vytrack\utilities\ConfigurationReader.java
 C:\IdeaProjects\Vytrack\src\test\java\com\vytrack\step_definitions\CreateVehicleModelDefinitions.java
 C:\IdeaProjects\Vytrack\src\test\java\com\vytrack\step_definitions\CreateCarStepDefinitions.java
