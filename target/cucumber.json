@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 7,
+        "line": 6,
         "name": "common steps",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1072000000,
+              "duration": 631000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-09T19:30:38.747Z",
+        "start_timestamp": "2020-11-14T17:03:16.453Z",
         "before": [
           {
             "result": {
-              "duration": 7428000000,
+              "duration": 2331000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 40,
+        "line": 53,
         "name": "Invalid password",
         "description": "",
         "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-password",
         "after": [
           {
             "result": {
-              "duration": 851000000,
+              "duration": 119000000,
               "status": "passed"
             },
             "match": {
@@ -56,10 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1222000000,
+              "duration": 738000000,
               "status": "passed"
             },
-            "line": 41,
+            "line": 54,
             "name": "user logs in with \"storemanager85\" username and \"wrong\" password",
             "match": {
               "arguments": [
@@ -78,16 +78,15 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003cInvalid [] name or password.\u003e but was:\u003cInvalid [user] name or password.\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(LoginStepDefinitions.java:61)\r\n\tat ✽.user verifies that \"Invalid  name or password.\" message is displayed(file:///C:/IdeaProjects/Vytrack/src/test/resources/features/Login.feature:42)\r\n",
-              "duration": 5050000000,
-              "status": "failed"
+              "duration": 5173000000,
+              "status": "passed"
             },
-            "line": 42,
-            "name": "user verifies that \"Invalid  name or password.\" message is displayed",
+            "line": 55,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Invalid  name or password.\"",
+                  "val": "\"Invalid user name or password.\"",
                   "offset": 19
                 }
               ],
@@ -102,6 +101,9 @@
           },
           {
             "name": "@negative_login"
+          },
+          {
+            "name": "@smoke"
           }
         ]
       }
