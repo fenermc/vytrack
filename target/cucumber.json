@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 631000000,
+              "duration": 1232000000,
               "status": "passed"
             },
             "line": 7,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-14T17:03:16.453Z",
+        "start_timestamp": "2020-11-14T18:56:33.597Z",
         "before": [
           {
             "result": {
-              "duration": 2331000000,
+              "duration": 6971000000,
               "status": "passed"
             },
             "match": {
@@ -43,11 +43,11 @@
         "after": [
           {
             "result": {
-              "duration": 119000000,
+              "duration": 1149000000,
               "status": "passed"
             },
             "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 738000000,
+              "duration": 1155000000,
               "status": "passed"
             },
             "line": 54,
@@ -78,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 5173000000,
+              "duration": 5062000000,
               "status": "passed"
             },
             "line": 55,
