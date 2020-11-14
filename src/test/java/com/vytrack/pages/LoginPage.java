@@ -8,6 +8,8 @@ public class LoginPage extends BasePage {
 
     //To not use web elements directly in step definition classes
     //helps to prevent code duplication and keep step definitions clean
+    //To not use web elements directly in step definition classes
+    //helps to prevent code duplication and keep step definitions clean
     @FindBy(id = "prependedInput")
     private WebElement username;
 
