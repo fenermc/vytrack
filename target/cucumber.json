@@ -11,9 +11,19 @@
         "steps": [
           {
             "result": {
-              "duration": 1232000000,
+              "duration": 1057000000,
               "status": "passed"
             },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
             "line": 7,
             "name": "user is on the login page",
             "match": {
@@ -24,11 +34,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-14T18:56:33.597Z",
+        "start_timestamp": "2020-11-15T01:37:55.047Z",
         "before": [
           {
             "result": {
-              "duration": 6971000000,
+              "duration": 4314000000,
               "status": "passed"
             },
             "match": {
@@ -43,7 +53,7 @@
         "after": [
           {
             "result": {
-              "duration": 1149000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "match": {
@@ -56,9 +66,20 @@
         "steps": [
           {
             "result": {
-              "duration": 1155000000,
+              "duration": 2185000000,
               "status": "passed"
             },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
             "line": 54,
             "name": "user logs in with \"storemanager85\" username and \"wrong\" password",
             "match": {
@@ -78,9 +99,19 @@
           },
           {
             "result": {
-              "duration": 5062000000,
+              "duration": 5317000000,
               "status": "passed"
             },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
             "line": 55,
             "name": "user verifies that \"Invalid user name or password.\" message is displayed",
             "match": {
