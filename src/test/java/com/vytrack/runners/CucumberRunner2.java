@@ -9,12 +9,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 //
         plugin = {
-                "json:target/cucumber.json"
+                "json:target/cucumber2.json"
                 ,"rerun:target/rerun.txt"
-                ,"timeline:target/timeline-report"
         },
         features = {
-                "src/test/resources/features/activities"
+                "src/test/resources/features/fleet"
         },
         glue = "com/vytrack/step_definitions",
         dryRun = false,
@@ -23,7 +22,7 @@ import org.junit.runner.RunWith;
 
 )
 
-public class CucumberRunner {
+public class CucumberRunner2 {
 
     //tags = "@s_o and @with_two_columns",
     // scenario must have BOTH tags

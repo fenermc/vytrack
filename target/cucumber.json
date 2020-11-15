@@ -3,15 +3,90 @@
     "line": 2,
     "elements": [
       {
-        "line": 6,
-        "name": "common steps",
+        "start_timestamp": "2020-11-15T06:20:03.273Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1837000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create calendar event with default time",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "as-user--i-want-to-be-able-to-create-calendar-events;create-calendar-event-with-default-time",
+        "after": [
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 999000000,
+              "duration": 540000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2675000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11367000000,
               "status": "passed"
             },
             "before": [
@@ -25,48 +100,48 @@
               }
             ],
             "line": 7,
-            "name": "user is on the login page",
+            "name": "user navigates to \"Activities\" and \"Calendar Events\"",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+              "arguments": [
+                {
+                  "val": "\"Activities\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Calendar Events\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
             },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-15T03:18:41.808Z",
-        "before": [
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 5121000000,
+              "duration": 460000000,
               "status": "passed"
             },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user clicks on create calendar event button",
             "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 53,
-        "name": "Invalid password",
-        "description": "",
-        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-password",
-        "after": [
-          {
-            "result": {
-              "duration": 114000000,
-              "status": "passed"
+              "location": "com.vytrack.step_definitions.CreateCalendarEventStepDefinitions.user_clicks_on_create_calendar_event_button()"
             },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 4025000000,
+              "duration": 3227000000,
               "status": "passed"
             },
             "before": [
@@ -79,26 +154,30 @@
                 }
               }
             ],
-            "line": 54,
-            "name": "user logs in with \"storemanager85\" username and \"wrong\" password",
+            "line": 9,
+            "name": "user adds new calendar event information",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"storemanager85\"",
-                  "offset": 18
-                },
-                {
-                  "val": "\"wrong\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+              "location": "com.vytrack.step_definitions.CreateCalendarEventStepDefinitions.user_adds_new_calendar_event_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "B20 Graduation Party"
+                ]
+              },
+              {
+                "cells": [
+                  "Description",
+                  "All B20 friends are invited for this party!"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5219000000,
+              "duration": 10503000000,
               "status": "passed"
             },
             "before": [
@@ -111,26 +190,53 @@
                 }
               }
             ],
-            "line": 55,
-            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "line": 12,
+            "name": "user clicks on save and close button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid user name or password.\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 781000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "user verifies that new calendar event is displayed:",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCalendarEventStepDefinitions.user_verifies_that_new_calendar_event_is_displayed(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "B20 Graduation Party"
+                ]
+              },
+              {
+                "cells": [
+                  "Description",
+                  "All B20 friends are invited for this party!"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
-          },
-          {
-            "name": "@negative_login"
+            "name": "@calendar_events"
           },
           {
             "name": "@smoke"
@@ -138,14 +244,14 @@
         ]
       }
     ],
-    "name": "As user I want to be able to login under different roles",
+    "name": "As user, I want to be able to create calendar events",
     "description": "",
-    "id": "as-user-i-want-to-be-able-to-login-under-different-roles",
+    "id": "as-user--i-want-to-be-able-to-create-calendar-events",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/activities/CreateCalendarEvent.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@calendar_events",
         "type": "Tag",
         "location": {
           "line": 1,

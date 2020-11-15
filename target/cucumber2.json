@@ -1,0 +1,1315 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-15T06:20:03.210Z",
+        "line": 4,
+        "name": "Verify that truck driver should be able to see all Vehicle information once navigate to Vehicle page.",
+        "description": "",
+        "id": "as-a-truck-driver-i-should-be-able-to-access-vehicle-under-fleet-module;verify-that-truck-driver-should-be-able-to-see-all-vehicle-information-once-navigate-to-vehicle-page.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [],
+        "tags": [
+          {
+            "name": "@Vehicle"
+          }
+        ]
+      }
+    ],
+    "name": "As a truck driver I should be able to access Vehicle under Fleet module",
+    "description": "",
+    "id": "as-a-truck-driver-i-should-be-able-to-access-vehicle-under-fleet-module",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/fleet/Access.Vehicle.feature",
+    "tags": [
+      {
+        "name": "@Vehicle",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-15T06:20:03.325Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1763000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "1. Add some car",
+        "description": "",
+        "id": "as-user--i-want-to-be-able-to-create-new-cars;1.-add-some-car",
+        "after": [
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 571000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2608000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11391000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user navigates to \"Fleet\" and \"Vehicles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fleet\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Vehicles\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 452000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user clicks on create car button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_clicks_on_create_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3517000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "user adds new vehicle information",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_adds_new_vehicle_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "License Plate",
+                  "SDET"
+                ]
+              },
+              {
+                "cells": [
+                  "Model Year",
+                  "2021"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10511000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "user clicks on save and close button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@add_car"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T06:20:34.264Z",
+        "before": [
+          {
+            "result": {
+              "duration": 633000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Add some car with FLORIDA plates and 2020 year",
+        "description": "",
+        "id": "as-user--i-want-to-be-able-to-create-new-cars;add-some-car-with-\u003clicense-plate\u003e-plates-and-\u003cmodel-year\u003e-year;auto-test-data;2",
+        "after": [
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 360000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2247000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11062000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "user navigates to \"Fleet\" and \"Vehicles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fleet\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Vehicles\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 456000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 20,
+            "name": "user clicks on create car button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_clicks_on_create_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3321000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "user adds new vehicle information",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_adds_new_vehicle_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "License Plate",
+                  "FLORIDA"
+                ]
+              },
+              {
+                "cells": [
+                  "Model Year",
+                  "2020"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10509000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "user clicks on save and close button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@add_car_scenario_outline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T06:21:02.975Z",
+        "before": [
+          {
+            "result": {
+              "duration": 604000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Add some car with QA plates and 2021 year",
+        "description": "",
+        "id": "as-user--i-want-to-be-able-to-create-new-cars;add-some-car-with-\u003clicense-plate\u003e-plates-and-\u003cmodel-year\u003e-year;auto-test-data;3",
+        "after": [
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 440000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2968000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11074000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "user navigates to \"Fleet\" and \"Vehicles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fleet\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Vehicles\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 477000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 20,
+            "name": "user clicks on create car button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_clicks_on_create_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3298000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "user adds new vehicle information",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_adds_new_vehicle_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "License Plate",
+                  "QA"
+                ]
+              },
+              {
+                "cells": [
+                  "Model Year",
+                  "2021"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10517000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "user clicks on save and close button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@add_car_scenario_outline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T06:21:32.472Z",
+        "before": [
+          {
+            "result": {
+              "duration": 602000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Add some car with RAMAZAN plates and 2030 year",
+        "description": "",
+        "id": "as-user--i-want-to-be-able-to-create-new-cars;add-some-car-with-\u003clicense-plate\u003e-plates-and-\u003cmodel-year\u003e-year;auto-test-data;4",
+        "after": [
+          {
+            "result": {
+              "duration": 106000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 359000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2008000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11267000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "user navigates to \"Fleet\" and \"Vehicles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fleet\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Vehicles\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 451000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 20,
+            "name": "user clicks on create car button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_clicks_on_create_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3326000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "user adds new vehicle information",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_adds_new_vehicle_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "License Plate",
+                  "RAMAZAN"
+                ]
+              },
+              {
+                "cells": [
+                  "Model Year",
+                  "2030"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10507000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "user clicks on save and close button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@add_car_scenario_outline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T06:22:01.108Z",
+        "before": [
+          {
+            "result": {
+              "duration": 606000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Add some car with SDET plates and 1999 year",
+        "description": "",
+        "id": "as-user--i-want-to-be-able-to-create-new-cars;add-some-car-with-\u003clicense-plate\u003e-plates-and-\u003cmodel-year\u003e-year;auto-test-data;5",
+        "after": [
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 377000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1987000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "user logs in as a \"sales manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sales manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11142000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "user navigates to \"Fleet\" and \"Vehicles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fleet\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Vehicles\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 441000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 20,
+            "name": "user clicks on create car button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_clicks_on_create_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3302000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "user adds new vehicle information",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateCarStepDefinitions.user_adds_new_vehicle_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "License Plate",
+                  "SDET"
+                ]
+              },
+              {
+                "cells": [
+                  "Model Year",
+                  "1999"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10507000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "user clicks on save and close button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@add_car_scenario_outline"
+          }
+        ]
+      }
+    ],
+    "name": "As user, I want to be able to create new cars",
+    "description": "",
+    "id": "as-user--i-want-to-be-able-to-create-new-cars",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/fleet/Create.Car.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-15T06:22:29.599Z",
+        "before": [
+          {
+            "result": {
+              "duration": 595000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Add some new vehicle model",
+        "description": "",
+        "id": "as-user--i-want-to-be-able-to-create-a-vehicle-model;add-some-new-vehicle-model",
+        "after": [
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 342000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1932000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11281000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user navigates to \"Fleet\" and \"Vehicles Model\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fleet\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Vehicles Model\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10455000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "user clicks on create vehicle model button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateVehicleModelDefinitions.userClicksOnCreateVehicleModelButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3249000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user adds new create vehicles model",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateVehicleModelDefinitions.userAddsNewCreateVehiclesModel(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Model Name",
+                  "Corolla"
+                ]
+              },
+              {
+                "cells": [
+                  "Make",
+                  "2021"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10469000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "user clicks on save and close button",
+            "match": {
+              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 768000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "user verifies that new Vehicle model is displayed",
+            "match": {
+              "location": "com.vytrack.step_definitions.CreateVehicleModelDefinitions.userVerifiesThatNewVehicleModelIsDisplayed(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Make",
+                  "2021"
+                ]
+              },
+              {
+                "cells": [
+                  "Model Name",
+                  "Corolla"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new_vehicle_model"
+          }
+        ]
+      }
+    ],
+    "name": "As user, I want to be able to create a vehicle model",
+    "description": "",
+    "id": "as-user--i-want-to-be-able-to-create-a-vehicle-model",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/fleet/Create.Vehicle.Model.feature",
+    "tags": [
+      {
+        "name": "@new_vehicle_model",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

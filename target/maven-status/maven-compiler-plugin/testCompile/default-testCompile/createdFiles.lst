@@ -2,6 +2,7 @@ com\vytrack\ui\enums\BrowserNameEnums.class
 com\vytrack\step_definitions\LoginStepDefinitions.class
 com\vytrack\runners\FailedRunner.class
 com\vytrack\ui\getProperties\getBrowserType.class
+com\vytrack\runners\CucumberRunner2.class
 com\vytrack\pages\BasePage.class
 com\vytrack\utilities\ConfigurationReader.class
 com\vytrack\pages\CreateCalendarEventPage.class
