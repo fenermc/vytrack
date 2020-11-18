@@ -3,61 +3,15 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-15T06:20:03.273Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1837000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Create calendar event with default time",
+        "line": 6,
+        "name": "common steps",
         "description": "",
-        "id": "as-user--i-want-to-be-able-to-create-calendar-events;create-calendar-event-with-default-time",
-        "after": [
-          {
-            "result": {
-              "duration": 110000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 540000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
-                }
-              }
-            ],
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2675000000,
+              "duration": 1430000000,
               "status": "passed"
             },
             "before": [
@@ -71,22 +25,272 @@
                 }
               }
             ],
-            "line": 6,
-            "name": "user logs in as a \"store manager\"",
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T07:06:21.756Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8708000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 64,
+        "name": "Invalid login with wrong and bad",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-login-with-\u003cusername\u003e-and-\u003cpassword\u003e;data-set;2",
+        "after": [
+          {
+            "result": {
+              "duration": 760000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1052000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 59,
+            "name": "user logs in with \"wrong\" username and \"bad\" password",
             "match": {
               "arguments": [
                 {
-                  "val": "\"store manager\"",
+                  "val": "\"wrong\"",
                   "offset": 18
+                },
+                {
+                  "val": "\"bad\"",
+                  "offset": 39
                 }
               ],
-              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 11367000000,
+              "duration": 5062000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 60,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@negative_scenario_outline"
+          },
+          {
+            "name": "@B223-308"
+          },
+          {
+            "name": "@B223-309"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1191000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T07:06:38.963Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5474000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 65,
+        "name": "Invalid login with wrong213 and bad",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-login-with-\u003cusername\u003e-and-\u003cpassword\u003e;data-set;3",
+        "after": [
+          {
+            "result": {
+              "duration": 746000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1061000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 59,
+            "name": "user logs in with \"wrong213\" username and \"bad\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong213\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"bad\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5059000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 60,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@negative_scenario_outline"
+          },
+          {
+            "name": "@B223-308"
+          },
+          {
+            "name": "@B223-309"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1192000000,
               "status": "passed"
             },
             "before": [
@@ -100,25 +304,131 @@
               }
             ],
             "line": 7,
-            "name": "user navigates to \"Activities\" and \"Calendar Events\"",
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T07:06:52.521Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5508000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 66,
+        "name": "Invalid login with wrong32 and bad",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-login-with-\u003cusername\u003e-and-\u003cpassword\u003e;data-set;4",
+        "after": [
+          {
+            "result": {
+              "duration": 746000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 853000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 59,
+            "name": "user logs in with \"wrong32\" username and \"bad\" password",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Activities\"",
+                  "val": "\"wrong32\"",
                   "offset": 18
                 },
                 {
-                  "val": "\"Calendar Events\"",
-                  "offset": 35
+                  "val": "\"bad\"",
+                  "offset": 41
                 }
               ],
-              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_navigates_to_and(java.lang.String,java.lang.String)"
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 460000000,
+              "duration": 5054000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 60,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@negative_scenario_outline"
+          },
+          {
+            "name": "@B223-308"
+          },
+          {
+            "name": "@B223-309"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1167000000,
               "status": "passed"
             },
             "before": [
@@ -132,16 +442,49 @@
                 }
               }
             ],
-            "line": 8,
-            "name": "user clicks on create calendar event button",
+            "line": 7,
+            "name": "user is on the login page",
             "match": {
-              "location": "com.vytrack.step_definitions.CreateCalendarEventStepDefinitions.user_clicks_on_create_calendar_event_button()"
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
             },
-            "keyword": "And "
-          },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T07:07:05.892Z",
+        "before": [
           {
             "result": {
-              "duration": 3227000000,
+              "duration": 5529000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "Invalid login with wrong12 and bad",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-login-with-\u003cusername\u003e-and-\u003cpassword\u003e;data-set;5",
+        "after": [
+          {
+            "result": {
+              "duration": 759000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1206000000,
               "status": "passed"
             },
             "before": [
@@ -154,35 +497,32 @@
                 }
               }
             ],
-            "line": 9,
-            "name": "user adds new calendar event information",
+            "line": 59,
+            "name": "user logs in with \"wrong12\" username and \"bad\" password",
             "match": {
-              "location": "com.vytrack.step_definitions.CreateCalendarEventStepDefinitions.user_adds_new_calendar_event_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+              "arguments": [
+                {
+                  "val": "\"wrong12\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"bad\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Title",
-                  "B20 Graduation Party"
-                ]
-              },
-              {
-                "cells": [
-                  "Description",
-                  "All B20 friends are invited for this party!"
-                ]
-              }
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 10503000000,
+              "duration": 5058000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -190,68 +530,44 @@
                 }
               }
             ],
-            "line": 12,
-            "name": "user clicks on save and close button",
+            "line": 60,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
             "match": {
-              "location": "com.vytrack.step_definitions.CommonStepDefinitions.user_clicks_on_save_and_close_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 781000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
                 }
-              }
-            ],
-            "line": 13,
-            "name": "user verifies that new calendar event is displayed:",
-            "match": {
-              "location": "com.vytrack.step_definitions.CreateCalendarEventStepDefinitions.user_verifies_that_new_calendar_event_is_displayed(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Title",
-                  "B20 Graduation Party"
-                ]
-              },
-              {
-                "cells": [
-                  "Description",
-                  "All B20 friends are invited for this party!"
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@calendar_events"
+            "name": "@login"
           },
           {
-            "name": "@smoke"
+            "name": "@negative_scenario_outline"
+          },
+          {
+            "name": "@B223-308"
+          },
+          {
+            "name": "@B223-309"
           }
         ]
       }
     ],
-    "name": "As user, I want to be able to create calendar events",
+    "name": "As user I want to be able to login under different roles",
     "description": "",
-    "id": "as-user--i-want-to-be-able-to-create-calendar-events",
+    "id": "as-user-i-want-to-be-able-to-login-under-different-roles",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/activities/CreateCalendarEvent.feature",
+    "uri": "file:src/test/resources/features/Login.feature",
     "tags": [
       {
-        "name": "@calendar_events",
+        "name": "@login",
         "type": "Tag",
         "location": {
           "line": 1,
